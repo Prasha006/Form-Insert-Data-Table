@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-InsertToTable</title>
+</head>
+<body>
+    <form method="POST" name="fform" id="form">
+            <table>
+                <tr>
+                    <td>First Name : </td>
+                    <td>
+                        <input type="text" name="firstname" placeholder="Enter your first name"><br>
+                    </td>
+               </tr>
+               <tr>
+                    <td>Last Name : </td>
+                    <td>
+                        <input type="text" name="lastname" placeholder="Enter your last name"><br>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Address : </td>
+                    <td>
+                        <input type="text" name="address"><br>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Pincode : </td>
+                    <td>
+                        <input type="pincode" name="pincode" ><br>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Please select your gender : </td>
+                    <tr>
+                        <td>
+                            <input type="radio" name="gender" id="male">
+                            <label for="male">Male</label><br>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Female</label><br>
+                        </td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td>Food Card : </td>
+                    <td>
+                        <select name="food_card" id="foodcard" multiple size="6">
+                            <option value="Noodles">Briyani</option>
+                            <option value="Briyani">Grill</option>
+                            <option value="ChickenRice">Fish fry</option>
+                            <option value="Chapathi">Rotti</option>
+                            <option value="GheeRice">Barotta</option>
+                            <option value="VegRice">Pizza</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>State : </td>
+                    <td>
+                        <input type="text" name="state"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country : </td>
+                    <td>
+                        <input type="text" name="country"><br>
+                    </td>
+                </tr> 
+                <tr>
+                    <th></th>
+                    <th>
+                        <input type="button" id="add" value="submit" onclick="addData();">
+                    </th>
+                </tr>
+            </table>   
+            <hr>
+            <table id="tbb" class="table" style="border-collapse: collapse;" border="1">
+                <thead>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Address</th>
+                        <th>Pincode</th>
+                        <th>Gender</th>
+                        <th>Food</th>
+                        <th>State</th>
+                        <th>Country</th>
+                </thead>
+                <tbody>
+        
+                </tbody>
+            </table>            
+    </form>
+    <script src="myScript.js"></script>
+</body>
+</html>
